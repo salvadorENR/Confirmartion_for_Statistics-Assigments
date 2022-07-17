@@ -1,0 +1,18 @@
+library(moments)
+skewness(d)
+kurtosis(d)
+kurtosi(d)
+var(d)
+sqrt(var(d))
+
+install.packages("BSDA")
+library("BSDA")
+
+z.test(d,alternative = "two.sided",mu=5.1,sigma.x=2.2,conf.level = 0.95)
+z.test(d,alternative = "greater",mu=5.1,sigma.x=2.2,conf.level = 0.95)
+z.test(d,alternative = "less",mu=5.1,sigma.x=2.2,conf.level = 0.95)
+
+
+t.test(d,alternative = "greater",mu=4.3,sigma.x=2.2,conf.level = 0.95)
+t.test(d,alternative = "less",mu=4.3,sigma.x=2.2,conf.level = 0.95)
+t.test(d,alternative = "two.sided",mu=4.3,sigma.x=2.2,conf.level = 0.95)
